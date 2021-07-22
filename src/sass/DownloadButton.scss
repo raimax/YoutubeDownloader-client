@@ -1,0 +1,44 @@
+.download-button {
+	border-radius: 0.3rem;
+	border-style: none;
+	background: #4d9b76;
+	padding: 10px 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	width: 100%;
+	justify-content: center;
+
+	&:hover {
+		background: #3b8360;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.download-button__title {
+		font-size: 1.3em;
+	}
+
+	svg {
+		margin-right: 5px;
+		color: white;
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.spinner {
+	animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }

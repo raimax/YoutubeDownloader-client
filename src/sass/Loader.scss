@@ -1,0 +1,25 @@
+.loader {
+	display: flex;
+	background: #E6F4F1;
+	width: 100%;
+	padding: 20px 0;
+	justify-content: center;
+	align-items: center;
+	height: 360px;
+	margin-bottom: 20px;
+
+	svg {
+		font-size: 10em;
+		color: #4f6ccf;
+		animation: rotation 2s infinite linear;
+	}
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }

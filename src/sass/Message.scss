@@ -1,0 +1,12 @@
+@import './Colors.scss';
+
+.message {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+
+	svg {
+		color: $danger;
+		margin-right: 5px;
+	}
+}

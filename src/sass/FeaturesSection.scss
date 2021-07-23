@@ -1,0 +1,40 @@
+@import './Colors.scss';
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	width: 960px;
+	grid-gap: 20px;
+	margin-bottom: auto;
+
+	.grid-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0;
+		border-radius: 5px;
+	
+		svg {
+			font-size: 4em;
+			margin-bottom: 10px;
+			color: $primary;
+		}
+	
+		.grid-item-title {
+			font-size: 1.3em;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}

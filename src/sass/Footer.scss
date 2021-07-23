@@ -1,0 +1,20 @@
+@import '../sass/Colors.scss';
+
+.footer {
+	width: 100%;
+	background: $light-shade;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50px;
+	color: black;
+
+	* {
+		margin: 0 7px;
+	}
+
+	a:link, a:visited {
+		color: black;
+		text-decoration: none;
+	}
+}

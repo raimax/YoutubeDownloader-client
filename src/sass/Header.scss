@@ -1,0 +1,50 @@
+@import './Colors.scss';
+
+.header {
+	width: 100%;
+	background: $primary;
+	display: flex;
+	justify-content: center;
+
+	a:link, a:visited {
+		color: white;
+		text-decoration: none;
+	}
+
+	.header__inner {
+		display: flex;
+		width: 70%;
+		align-items: center;
+		height: 50px;
+		font-size: 1.2em;
+
+		.header__website-name {
+			width: 100%;
+		}
+	
+		.header__navigation {
+			display: flex;
+	
+			.navigation-item {
+				margin-left: 50px;
+				border-bottom: 4px solid $primary;
+	
+				&:hover {
+					border-bottom: 4px solid white;
+				}
+			}
+		}
+	}
+}
+
+.active-navlink {
+	border-bottom: 4px solid white;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header {
+		.header__inner {
+			width: 80%;
+		}
+	}
+}

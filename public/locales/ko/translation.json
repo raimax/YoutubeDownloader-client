@@ -33,7 +33,8 @@
 		"channel": "채널",
 		"duration": "지속시간",
 		"download-video": "비디오 다운로드",
-		"download-audio": "오디오 다운로드"
+		"download-audio": "오디오 다운로드",
+		"wait": "기다리세요"
 	},
 	"not-found": {
 		"title": "찾을 수 없음",

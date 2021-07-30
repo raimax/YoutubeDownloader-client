@@ -33,7 +33,8 @@
 		"channel": "Channel",
 		"duration": "Duration",
 		"download-video": "Download Video",
-		"download-audio": "Download Audio"
+		"download-audio": "Download Audio",
+		"wait": "Please Wait"
 	},
 	"not-found": {
 		"title": "Not Found",

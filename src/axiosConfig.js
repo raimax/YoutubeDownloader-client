@@ -1,7 +1,8 @@
 import axios from 'axios';
+require('dotenv').config();
 
 const axiosConfig = axios.create({
-	baseURL: 'https://youtubedownloaderapi20210730113218.azurewebsites.net/api'
+	baseURL: process.env.REACT_APP_SERVER_URL + '/api'
 });
 
 export default axiosConfig

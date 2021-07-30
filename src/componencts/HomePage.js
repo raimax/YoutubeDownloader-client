@@ -9,6 +9,7 @@ import GetVideoIdFromUrl from '../logic/GetVideoIdFromUrl';
 import FeaturesSection from './FeaturesSection';
 import Message from './Message';
 import { useTranslation } from 'react-i18next';
+require('dotenv').config();
 
 const HomePage = () => {
 	const [input, setInput] = useState("");
@@ -44,7 +45,7 @@ const HomePage = () => {
 			return;
 		}
 
-		window.location.replace('https://localhost:44318/api/VideoDownload/' + videoId);
+		window.location.replace(process.env.REACT_APP_SERVER_URL + '/api/VideoDownload/' + videoId);
 	}
 
 	const DownloadAudio = (event) => {
@@ -54,7 +55,7 @@ const HomePage = () => {
 			return;
 		}
 
-		window.location.replace('https://localhost:44318/api/AudioDownload/' + videoId);
+		window.location.replace(process.env.REACT_APP_SERVER_URL + '/api/AudioDownload/' + videoId);
 	}
 
 	const onSearch = (videoUrl) => {

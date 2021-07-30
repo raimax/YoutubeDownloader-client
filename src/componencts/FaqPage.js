@@ -1,33 +1,20 @@
 import React from 'react';
 import '../sass/FaqPage.scss';
+import { useTranslation } from 'react-i18next';
 
 const FaqPage = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="container">
 			<div className="faq">
-				<p className="faq__title">FAQ</p>
+				<p className="faq__title">{t("faq.title")}</p>
 				<div className="faq__group">
 					<p className="faq__question">
-						Q: Consectetur do adipisicing sit excepteur.
+						Q: Is frequently asked questions section under construction?.
 					</p>
 					<p className="faq__answer">
-						Incididunt qui officia tempor minim officia tempor magna occaecat irure laborum eu in quis.
-					</p>
-				</div>
-				<div className="faq__group">
-					<p className="faq__question">
-						Q: Consectetur do adipisicing sit excepteur.
-					</p>
-					<p className="faq__answer">
-						Incididunt qui officia tempor minim officia tempor magna occaecat irure laborum eu in quis.
-					</p>
-				</div>
-				<div className="faq__group">
-					<p className="faq__question">
-						Q: Consectetur do adipisicing sit excepteur.
-					</p>
-					<p className="faq__answer">
-						Incididunt qui officia tempor minim officia tempor magna occaecat irure laborum eu in quis.
+						Yes.
 					</p>
 				</div>
 			</div>

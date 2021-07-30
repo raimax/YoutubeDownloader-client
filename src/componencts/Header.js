@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../sass/Header.scss';
+import LanguageDropdown from './LanguageDropdown';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="header">
 			<div className="header__inner">
@@ -11,14 +15,12 @@ const Header = () => {
 				</div>
 				<div className="header__navigation">
 					<div className="navigation-item">
-						<NavLink exact to="/" activeClassName="active-navlink">Home</NavLink>
+						<NavLink exact to="/" activeClassName="active-navlink">{t("navigation.home")}</NavLink>
 					</div>
 					<div className="navigation-item">
-						<NavLink to="/faq" activeClassName="active-navlink">FAQ</NavLink>
+						<NavLink to="/faq" activeClassName="active-navlink">{t("navigation.faq")}</NavLink>
 					</div>
-					<div className="navigation-item">
-						<NavLink to="/">Language</NavLink>
-					</div>
+					<LanguageDropdown />
 				</div>
 			</div>
 		</div>

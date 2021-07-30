@@ -8,6 +8,7 @@ import Loader from './Loader';
 import GetVideoIdFromUrl from '../logic/GetVideoIdFromUrl';
 import FeaturesSection from './FeaturesSection';
 import Message from './Message';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = () => {
 	const [input, setInput] = useState("");
@@ -15,6 +16,7 @@ const HomePage = () => {
 	const [videoId, setVideoId] = useState(null);
 	const [loading, setLoading] = useState(false);
 	const [message, setMessage] = useState(null);
+	const { t } = useTranslation();
 
 	const renderVideoInfo = () => {
 		if (videoInfo && !loading) {
@@ -27,8 +29,8 @@ const HomePage = () => {
 							author={videoInfo.author}
 							duration={videoInfo.duration}
 						/>
-						<DownloadButton download={DownloadVideo} title="Download Video" />
-						<DownloadButton download={DownloadAudio} title="Download Audio" />
+						<DownloadButton download={DownloadVideo} title={t("video-info.download-video")} />
+						<DownloadButton download={DownloadAudio} title={t("video-info.download-audio")} />
 					</div>
 				</div>
 			)
@@ -106,13 +108,13 @@ const HomePage = () => {
 	return (
 		<div className="container">
 			<div className="search-area">
-				<p>Youtube Downloader</p>
+				<p>{t("search-area.title")}</p>
 				<div className="input-box">
 					<div className="input-field">
 						<SearchIcon />
-						<input placeholder="Paste youtube link here..." value={input} onChange={e => setInput(e.target.value)} type="text" />
+						<input placeholder={t("search-bar.placeholder")} value={input} onChange={e => setInput(e.target.value)} type="text" />
 					</div>
-					<button className="search-button" onClick={() => onSearch(input)}>Search</button>
+					<button disabled={loading} className="search-button" onClick={() => onSearch(input)}>{t("search-bar.search")}</button>
 				</div>
 				{renderMessage()}
 			</div>

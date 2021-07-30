@@ -3,6 +3,10 @@ const GetVideoIdFromUrl = (videoUrl) => {
 		return;
 	}
 
+	if (videoUrl.includes('&pp')) {
+		videoUrl = videoUrl.split('&pp')[0];
+	}
+
 	if (videoUrl.includes('youtu.be/')) {
 		videoUrl = videoUrl.split('youtu.be/')[1];
 	}

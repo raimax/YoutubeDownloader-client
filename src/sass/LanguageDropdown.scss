@@ -1,0 +1,31 @@
+@import './Colors.scss';
+
+.dropdown {
+	position: relative;
+	cursor: pointer;
+
+	.dropdown__current-selection {
+		display: flex;
+	}
+
+	.dropdown__menu {
+		position: absolute;
+		background: white;
+		color: black;
+		border-radius: 5px;
+		border: 1px solid darken($light-shade, 5%);
+		margin-top: 5px;
+
+		.dropdown__menu__item {
+			padding: 10px;
+		
+			&:not(:last-child) {
+				border-bottom: 1px solid darken($light-shade, 5%);
+			}
+
+			&:hover {
+				background: $light-shade;
+			}
+		}
+	}
+}

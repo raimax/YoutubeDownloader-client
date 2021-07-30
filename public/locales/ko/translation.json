@@ -1,0 +1,60 @@
+{
+	"navigation" : {
+		"home": "홈",
+		"faq": "자주하는 질문"
+	},
+	"footer" : {
+		"contact": "문의하기",
+		"privacy-policy": "개인 정보 정책",
+		"terms-of-use": "이용약관"
+	},
+	"search-area": {
+		"title": "유튜브 다운로더"
+	},
+	"search-bar": {
+		"placeholder": "여기에 유튜브 링크 붙여넣기...",
+		"search": "검색"
+	},
+	"features": {
+		"1": {
+			"title": "브라우저에서 작동",
+			"description": "설치할 필요 없음"
+		},
+		"2": {
+			"title": "오디오 다운로드",
+			"description": "고품질 mp3 오디오 파일 다운로드"
+		},
+		"3": {
+			"title": "비디오 다운로드",
+			"description": "고해상도 mp4 비디오 파일 다운로드"
+		}
+	},
+	"video-info": {
+		"channel": "채널",
+		"duration": "지속시간",
+		"download-video": "비디오 다운로드",
+		"download-audio": "오디오 다운로드"
+	},
+	"not-found": {
+		"title": "찾을 수 없음",
+		"description": "찾으시는 페이지가 존재하지 않습니다"
+	},
+	"contact": {
+		"title": "문의하기",
+		"name": "이름",
+		"email": "이메일 (선택 과목)",
+		"message": "메시지",
+		"send": "보내다",
+		"sending": "보내기",
+		"requiredFields": "필수 입력 사항"
+	},
+	"privacy": {
+		"title": "개인 정보 정책"
+	},
+	"terms": {
+		"title": "이용약관"
+	},
+	"faq": {
+		"title": "자주하는 질문"
+	}
+}

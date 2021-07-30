@@ -1,0 +1,16 @@
+.privacy__title {
+	margin: 50px 0;
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.privacy {
+	width: 50%;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.privacy {
+		width: 80%;
+	}
+}

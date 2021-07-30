@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../sass/DownloadButton.scss';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import AutorenewIcon from '@material-ui/icons/Autorenew';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 const DownloadButton = (props) => {
 	const [loading, setloading] = useState(false);
@@ -14,7 +14,7 @@ const DownloadButton = (props) => {
 
 	const renderButtonContent = () => {
 		if (loading) {
-			return <AutorenewIcon className="spinner"/>;
+			return <CircularProgress size="1.5em" />;
 		}
 
 		return (

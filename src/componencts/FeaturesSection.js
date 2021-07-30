@@ -3,35 +3,38 @@ import AudiotrackIcon from '@material-ui/icons/Audiotrack';
 import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
 import WebIcon from '@material-ui/icons/Web';
 import '../sass/FeaturesSection.scss';
+import { useTranslation } from 'react-i18next';
 
 const FeaturesSection = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="grid-container">
 			<div className="grid-item">
 				<WebIcon />
 				<div className="grid-item-title">
-					Works in a Browser
+					{t("features.1.title")}
 				</div>
 				<div className="grid-item-description">
-					No installation required
+					{t("features.1.description")}
 				</div>
 			</div>
 			<div className="grid-item">
 				<AudiotrackIcon />
 				<div className="grid-item-title">
-					Download Audio
+					{t("features.2.title")}
 				</div>
 				<div className="grid-item-description">
-					Download high quality mp3 audio files
+					{t("features.2.description")}
 				</div>
 			</div>
 			<div className="grid-item">
 				<OndemandVideoIcon />
 				<div className="grid-item-title">
-					Download Video
+					{t("features.3.title")}
 				</div>
 				<div className="grid-item-description">
-					Download high definition mp4 video files
+					{t("features.3.description")}
 				</div>
 			</div>
 		</div>

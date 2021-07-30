@@ -1,0 +1,60 @@
+{
+	"navigation" : {
+		"home": "Home",
+		"faq": "FAQ"
+	},
+	"footer" : {
+		"contact": "Contact",
+		"privacy-policy": "Privacy Policy",
+		"terms-of-use": "Terms of Use"
+	},
+	"search-area": {
+		"title": "Youtube Downloader"
+	},
+	"search-bar": {
+		"placeholder": "Paste youtube link here...",
+		"search": "Search"
+	},
+	"features": {
+		"1": {
+			"title": "Works in a Browser",
+			"description": "No installation required"
+		},
+		"2": {
+			"title": "Download Audio",
+			"description": "Download high quality mp3 audio files"
+		},
+		"3": {
+			"title": "Download Video",
+			"description": "Download high definition mp4 video files"
+		}
+	},
+	"video-info": {
+		"channel": "Channel",
+		"duration": "Duration",
+		"download-video": "Download Video",
+		"download-audio": "Download Audio"
+	},
+	"not-found": {
+		"title": "Not Found",
+		"description": "The page you are looking for doesn't exist"
+	},
+	"contact": {
+		"title": "Contact Us",
+		"name": "Name",
+		"email": "Email (optional)",
+		"message": "Message",
+		"send": "Send",
+		"sending": "Sending",
+		"requiredFields": "Required Fields"
+	},
+	"privacy": {
+		"title": "Privacy Policy"
+	},
+	"terms": {
+		"title": "Terms of Use"
+	},
+	"faq": {
+		"title": "FAQ"
+	}
+}

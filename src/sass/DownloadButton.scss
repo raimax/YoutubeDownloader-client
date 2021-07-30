@@ -9,6 +9,7 @@
 	cursor: pointer;
 	width: 100%;
 	justify-content: center;
+	max-height: 40px;
 
 	&:hover {
 		background: #3b8360;
@@ -20,25 +21,10 @@
 
 	.download-button__title {
 		font-size: 1.3em;
+		margin-left: 5px;
 	}
 
 	svg {
-		margin-right: 5px;
 		color: white;
-		width: 24px;
-		height: 24px;
 	}
 }
-
-.spinner {
-	animation: rotation 2s infinite linear;
-}
-
-@keyframes rotation {
-	from {
-	  transform: rotate(0deg);
-	}
-	to {
-	  transform: rotate(359deg);
-	}
-  }

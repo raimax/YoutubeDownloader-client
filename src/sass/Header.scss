@@ -5,6 +5,8 @@
 	background: $primary;
 	display: flex;
 	justify-content: center;
+	color: white;
+	white-space: nowrap;
 
 	a:link, a:visited {
 		color: white;
@@ -25,8 +27,12 @@
 		.header__navigation {
 			display: flex;
 	
-			.navigation-item {
+			&>:not(:first-child) {
 				margin-left: 50px;
+			}
+
+			.navigation-item {
+				
 				border-bottom: 4px solid $primary;
 	
 				&:hover {
@@ -45,6 +51,21 @@
 	.header {
 		.header__inner {
 			width: 80%;
+		}
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header {
+		text-align: center;
+		padding: 15px 0;
+
+		.header__inner {
+			flex-direction: column;
+
+			.header__website-name {
+				padding-bottom: 5px;
+			}
 		}
 	}
 }
